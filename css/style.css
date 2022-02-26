@@ -5,31 +5,6 @@
 }
 
 /**********************/
-/* SCROLLBAR */
-/**********************/
-
-body::-webkit-scrollbar {
-  /* background-color: #fff; */
-  width: 16px;
-}
-
-/* scrollbar itself */
-body::-webkit-scrollbar-thumb {
-  background-color: #adb5bd;
-  border-radius: 16px;
-  border: 5px solid #fff;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  /* background-color: #a0a0a5; */
-  border: 4px solid #fff;
-}
-
-body::-webkit-scrollbar-button {
-  display: none;
-}
-
-/**********************/
 /* HEADER */
 /**********************/
 
@@ -89,6 +64,7 @@ body::-webkit-scrollbar-button {
   padding: 0 3.2rem;
 
   display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   grid-template-columns: 1fr 1fr;
   gap: 4.8rem;
   align-items: center;
@@ -158,12 +134,192 @@ body::-webkit-scrollbar-button {
 .profile-img {
   width: 65%;
   border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+.profile-description-box {
+  padding: 1.6rem 3.2rem 4.8rem 3.2rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.profile-description-box:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.heading-profile {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #339af0;
+  margin-bottom: 3.2rem;
+}
+
+.profile-list {
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.profile-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.item-title {
+  font-weight: 600;
+}
+
+.about-me-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+/**********************/
+/* SECTION EXPERIENCE */
+/**********************/
+
+.section-experience {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.heading-experience {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #339af0;
+  /* margin-bottom: 3.2rem; */
+  text-transform: uppercase;
+
+  grid-column: 1 / -1;
+}
+
+.experience {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 4.8rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+.experience-company,
+.experience-description {
+  padding: 3.2rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  font-size: 2rem;
+}
+
+.experience-title {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.experience-text {
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.experience-address {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #339af0;
+}
+
+.experience-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #339af0;
+}
+
+.experience-address-link:link,
+.experience-address-link:visited {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.experience-address-link:hover,
+.experience-address-link:active {
+  color: #1971c2;
 }
 
 /**********************/
 /* SECTION */
 /**********************/
 
-/**********************/
-/* SECTION */
-/**********************/
+.section-abilitie {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.abilitie {
+  /* #4dabf7 */
+  /* #1864ab */
+  background-image: linear-gradient(to right bottom, #1864ab, #4dabf7);
+  border-radius: 11px;
+  overflow: hidden;
+  padding: 3.2rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 6.4rem;
+  column-gap: 4.8rem;
+
+  /* remove */
+  /* height: 75vh; */
+}
+
+.heading-abilitie {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #fff;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.abilitie-list {
+  list-style: none;
+  font-size: 1.8rem;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.abilitie-list li {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1.2rem;
+}
+
+.abilitie-list li:hover {
+  border-radius: 9px;
+  background-color: #4dabf7;
+}
+
+.abilitie-level {
+  display: flex;
+  gap: 0.4rem;
+  transition: all 0.3s;
+}
+
+.abilitie-list li:hover .abilitie-level {
+  gap: 0.8rem;
+}
+
+.abilitie-level ion-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
