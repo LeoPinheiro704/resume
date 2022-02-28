@@ -9,12 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+
+  <link rel="icon" href="img/icons/favicon.png">
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <link rel="shortcut icon" href="img/icon-resume.svg" type="image/x-icon">
 
   <!-- <ion-icon class="icon-title" name="code-slash-outline"></ion-icon> -->
   <title>
@@ -28,10 +32,9 @@
     <p class="header-name">Leonardo<span>Pinheiro</span></p>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a href="#" class="main-nav-link">Profile</a></li>
-        <li><a href="#" class="main-nav-link">Section 2</a></li>
-        <li><a href="#" class="main-nav-link">Section 3</a></li>
-        <li><a href="#" class="main-nav-link">Section 4</a></li>
+        <li><a href="#profile" class="main-nav-link">Profile</a></li>
+        <li><a href="#experience" class="main-nav-link">Experience</a></li>
+        <li><a href="#abilitie" class="main-nav-link">Abilities</a></li>
       </ul>
     </nav>
   </header>
@@ -51,10 +54,9 @@
       </div>
     </section>
 
-    <section class="section-profile">
+    <section class="section-profile" id="profile">
       <div class="container txt-ct">
         <h2 class="heading-secondary">Profile</h2>
-        <!-- <span class="subheading">Meals</span> -->
       </div>
 
       <div class="container grid grid--3-cols">
@@ -66,7 +68,7 @@
         </div>
 
         <div class="profile-img-box">
-          <img src="img/profile.jpg" class="profile-img" alt="Leonardo profile picture">
+          <img src="img/profile-min.jpg" class="profile-img" alt="Leonardo profile picture">
         </div>
 
         <div class="profile-description-box">
@@ -89,7 +91,7 @@
       </div>
     </section>
 
-    <section class="section-experience">
+    <section class="section-experience" id="experience">
       <div class="container txt-ct">
         <h2 class="heading-secondary">Experience</h2>
       </div>
@@ -171,96 +173,155 @@
       </div>
     </section>
 
-    <section class="section-abilitie">
+    <section class="section-abilitie" id="abilitie">
       <div class="container">
         <div class="abilitie">
           <h2 class="heading-abilitie">Abilities</h2>
-          <ul class="abilitie-list">
-            <li>
-              <span>Abilitie 1</span>
-              <div class="abilitie-level">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-            </li>
-            <li>
-              <span>Abilitie 2</span>
-              <div class="abilitie-level">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-            </li>
-            <li>
-              <span>Abilitie 3</span>
-              <div class="abilitie-level">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-            </li>
-            <li>
-              <span>Abilitie 4</span>
-              <div class="abilitie-level">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-            </li>
-          </ul>
+          <div class="abilitie-box">
+            <h3 class="heading-abilitie--box">Skills</h3>
+            <ul class="abilitie-list">
+              <li>
+                <span>Abilitie 1</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <span>Abilitie 2</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <span>Abilitie 3</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <span>Abilitie 4</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+            </ul>
 
-          <ul class="abilitie-list">
-            <li>
-              <span>Abilitie 5</span>
-              <div class="abilitie-level">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-            </li>
-            <li>
-              <span>Abilitie 6</span>
-              <div class="abilitie-level">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-            </li>
-            <li>
-              <span>Abilitie 7</span>
-              <div class="abilitie-level">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-            </li>
-            <li>
-              <span>Abilitie 8</span>
-              <div class="abilitie-level">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-            </li>
-          </ul>
+            <ul class="abilitie-list">
+              <li>
+                <span>Abilitie 5</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <span>Abilitie 6</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <span>Abilitie 7</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+              <li>
+                <span>Abilitie 8</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="abilitie-box">
+            <h3 class="heading-abilitie--box">Languages</h3>
+            <ul class="abilitie-list">
+              <li>
+                <span>Abilitie 1</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+            </ul>
 
+            <ul class="abilitie-list">
+              <li>
+                <span>Abilitie 5</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="abilitie-box">
+            <h3 class="heading-abilitie--box">Tools</h3>
+            <ul class="abilitie-list">
+              <li>
+                <span>Abilitie 1</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="abilitie-list">
+              <li>
+                <span>Abilitie 5</span>
+                <div class="abilitie-level">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

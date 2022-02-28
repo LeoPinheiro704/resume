@@ -197,7 +197,6 @@
   font-size: 2.4rem;
   font-weight: 500;
   color: #339af0;
-  /* margin-bottom: 3.2rem; */
   text-transform: uppercase;
 
   grid-column: 1 / -1;
@@ -255,7 +254,7 @@
 }
 
 /**********************/
-/* SECTION */
+/* SECTION ABILITIES */
 /**********************/
 
 .section-abilitie {
@@ -263,20 +262,10 @@
 }
 
 .abilitie {
-  /* #4dabf7 */
-  /* #1864ab */
   background-image: linear-gradient(to right bottom, #1864ab, #4dabf7);
   border-radius: 11px;
   overflow: hidden;
   padding: 3.2rem;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 6.4rem;
-  column-gap: 4.8rem;
-
-  /* remove */
-  /* height: 75vh; */
 }
 
 .heading-abilitie {
@@ -285,6 +274,26 @@
   color: #fff;
   grid-column: 1 / -1;
   text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.abilitie-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.2rem;
+  column-gap: 4.8rem;
+}
+
+.abilitie-box:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+
+.heading-abilitie--box {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+  grid-column: 1 / -1;
 }
 
 .abilitie-list {
