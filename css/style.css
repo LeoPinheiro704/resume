@@ -332,3 +332,49 @@
   height: 1.8rem;
   width: 1.8rem;
 }
+
+/**********************/
+/* FOOTER */
+/**********************/
+
+/* #e9ecef */
+.footer {
+  background-color: #e9ecef;
+  padding: 4.8rem 0 4.8rem 0;
+}
+
+.footer .heading-secondary {
+  color: #343a40;
+  margin-bottom: 3.2rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.contact a:link,
+.contact a:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #343a40;
+}
+
+.contact a:hover,
+.contact a:active {
+  color: #1864ab;
+}
+
+.contact ion-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.copyright {
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+}
