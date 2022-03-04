@@ -1,11 +1,4 @@
 /**********************/
-/* BELOW 1344PX (Smaller desktops) */
-/**********************/
-
-@media (max-width: 84em) {
-}
-
-/**********************/
 /* BELOW 1200PX (Landscape Tablets) */
 /**********************/
 
@@ -122,6 +115,35 @@
 
 @media (max-width: 44em) {
   /* quebra hero em 1 grid */
+  .section-hero {
+    padding-bottom: 4.8rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 4.8rem;
+  }
+
+  .hero-img {
+    width: 75%;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .section-profile {
+    padding-bottom: 4.8rem;
+  }
+
+  .section-experience {
+    padding-bottom: 4.8rem;
+  }
+
+  .section-abilitie {
+    padding-bottom: 4.8rem;
+  }
 }
 
 /**********************/
@@ -129,4 +151,30 @@
 /**********************/
 
 @media (max-width: 34em) {
+  .grid {
+    row-gap: 3.2rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .experience {
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+
+  .experience-address {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .address {
+    justify-self: center;
+  }
+
+  .abilitie-box {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
 }

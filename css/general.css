@@ -65,6 +65,11 @@ body {
   overflow-x: hidden;
 }
 
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /**********************/
 /* SCROLLBAR */
 /**********************/
