@@ -15,3 +15,11 @@ allLinks.forEach((link) => {
     }
   });
 });
+
+///////////////////////////////////////////////////////////
+// Get age
+const ageEl = document.querySelector(".age");
+const birthday = new Date(1996, 07, 17);
+const ageDifMs = Date.now() - birthday.getTime();
+const ageDate = new Date(ageDifMs);
+ageEl.textContent = Math.abs(ageDate.getUTCFullYear() - 1970);
