@@ -1,475 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Leonardo A. Pinheiro résumé website" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Leonardo A. Pinheiro résumé website">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icons/favicon.png" />
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
-  <link rel="icon" href="img/icons/favicon.png">
-  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
-  <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/queries.css">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="js/script.js"></script>
 
-  <script defer src="js/script.js"></script>
+    <title>Leonardo A. Pinheiro</title>
+  </head>
 
-  <title>Leonardo A. Pinheiro</title>
-</head>
+  <body>
+    <header class="header">
+      <!-- img or a span -->
+      <p class="header-name">Leonardo<span>Pinheiro</span></p>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#profile" class="main-nav-link">Profile</a></li>
+          <li><a href="#experience" class="main-nav-link">Experience</a></li>
+          <li><a href="#abilitie" class="main-nav-link">Abilities</a></li>
+          <li><a href="#contact" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-<body>
-  <header class="header">
-    <!-- img or a span -->
-    <p class="header-name">Leonardo<span>Pinheiro</span></p>
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li><a href="#profile" class="main-nav-link">Profile</a></li>
-        <li><a href="#experience" class="main-nav-link">Experience</a></li>
-        <li><a href="#abilitie" class="main-nav-link">Abilities</a></li>
-        <li><a href="#contact" class="main-nav-link">Contact</a></li>
-      </ul>
-    </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
 
-    <button class="btn-mobile-nav">
-      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-    </button>
-  </header>
-
-  <main>
-    <section class="section-hero">
-      <div class="hero">
-        <div class="hero-text-box">
-          <h1 class="hero-name">
-            Hi, I'm Leonardo
-          </h1>
-          <p class="hero-profession">Front End Developer</p>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="hero-name">Hi, I'm Leonardo</h1>
+            <p class="hero-profession">Front End Developer</p>
+          </div>
+          <div class="hero-img-box">
+            <img
+              alt="Person looking the code page"
+              class="hero-img"
+              src="img/hero-code-page.svg"
+            />
+          </div>
         </div>
-        <div class="hero-img-box">
-          <img alt="Person looking the code page" class="hero-img" src="img/hero-code-page.svg">
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-profile" id="profile">
-      <div class="container txt-ct">
-        <h2 class="heading-secondary">Profile</h2>
-      </div>
-
-      <div class="container grid grid--3-cols">
-        <div class="profile-description-box">
-          <h3 class="heading-profile txt-ct">About me</h3>
-          <p class="about-me-description">I'm a front end software developer with solid knowledge in Angular. I
-            discovered that I was in love with technology after I changed a lot of times the language tool that I worked
-            on. Every time that I changed, I was excited to discover something new.</p>
-        </div>
-
-        <div class="profile-img-box">
-          <img src="img/profile-min.jpg" class="profile-img" alt="Leonardo profile picture">
+      <section class="section-profile" id="profile">
+        <div class="container txt-ct">
+          <h2 class="heading-secondary">Profile</h2>
         </div>
 
-        <div class="profile-description-box">
-          <h3 class="heading-profile txt-ct">Details</h3>
-          <ul class="profile-list">
-            <li class="profile-list-item">
-              <span class="item-title">Name:</span>
-              <span class="item-description">Leonardo A. Pinheiro</span>
-            </li>
-            <li class="profile-list-item">
-              <span class="item-title">Age:</span>
-              <span class="item-description"><span class="age"></span> years</span>
-            </li>
-            <li class="profile-list-item">
-              <span class="item-title">Location:</span>
-              <span class="item-description">São Paulo, Brazil</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-experience" id="experience">
-      <div class="container txt-ct">
-        <h2 class="heading-secondary">Experience</h2>
-      </div>
-
-      <div class="container">
-        <!-- ----------- EDUCATION ----------- -->
-        <div class="experience">
-          <h3 class="heading-experience">Education</h3>
-          <div class="experience-company">
-            <span class="experience-title">Unibta</span>
-            <p class="experience-text">Jan 2014 - Dez 2018</p>
-          </div>
-          <div class="experience-description">
-            <span class="experience-title">Bachelor - Computer Engineering</span>
-            <p class="experience-text">This degree showed me principles from Computer Science and Electrical Engineering
-              to create hardware (physical components) and firmware which are used in a wide range of areas.</p>
-            <div class="experience-address">
-              <div class="address">
-                <ion-icon class="experience-icon" name="location-outline"></ion-icon>
-                <p>São Paulo, Brazil</p>
-              </div>
-              <div class="address">
-                <ion-icon class="experience-icon" name="link-outline"></ion-icon>
-                <a class="experience-address-link" href="https://unibta.edu.br/" target="_blank">unibta.edu.br</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="experience-company">
-            <span class="experience-title">Senai</span>
-            <p class="experience-text">Jan 2011 - Dez 2012</p>
-          </div>
-          <div class="experience-description">
-            <span class="experience-title">Course - Eletronics</span>
-            <p class="experience-text">This course professionally qualified myself in the development, installation and
-              maintenance of electronic systems, according to technical, environmental, quality, health and safety
-              procedures and standards at work.</p>
-            <div class="experience-address">
-              <div class="address">
-                <ion-icon class="experience-icon" name="location-outline"></ion-icon>
-                <p>São Paulo, Brazil</p>
-              </div>
-              <div class="address">
-                <ion-icon class="experience-icon" name="link-outline"></ion-icon>
-                <a class="experience-address-link" href="https://www.sp.senai.br/" target="_blank">sp.senai.br</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- ----------- CAREER ----------- -->
-          <h3 class="heading-experience">Career</h3>
-          <div class="experience-company">
-            <span class="experience-title">Beyond Soluções</span>
-            <p class="experience-text">Sep 2021 - current</p>
-          </div>
-          <div class="experience-description">
-            <span class="experience-title">Full-time &mdash; Front End Developer</span>
-            <p class="experience-text">Working as Angular Developer in BTG Pactual, a stockbroker company. I'm
-              responsible for application development, test, and production deployment using Angular 2+ and AngularJS.
+        <div class="container grid grid--3-cols">
+          <div class="profile-description-box">
+            <h3 class="heading-profile txt-ct">About me</h3>
+            <p class="about-me-description">
+              I'm a dedicated front-end developer with a strong emphasis on
+              Angular. With a passion for crafting intuitive and visually
+              appealing web applications, I thrive on creating seamless user
+              experiences that bridge the gap between design and functionality.
+              My journey in web development has led me to specialize in Angular,
+              where I've honed my skills and expertise to build dynamic,
+              responsive, and high-performance interfaces. I'm constantly
+              staying up-to-date with the latest web technologies and best
+              practices to ensure I deliver top-notch solutions. Let's connect
+              and discuss how I can contribute to your next project.
             </p>
-            <div class="experience-address">
-              <div class="address">
-                <ion-icon class="experience-icon" name="location-outline"></ion-icon>
-                <p>São Paulo, Brazil</p>
-              </div>
-              <div class="address">
-                <ion-icon class="experience-icon" name="link-outline"></ion-icon>
-                <a class="experience-address-link" href="https://www.imaginebeyond.com.br/"
-                  target="_blank">imaginebeyond.com.br</a>
-              </div>
-            </div>
           </div>
 
-          <div class="experience-company">
-            <span class="experience-title">Santander</span>
-            <p class="experience-text">Sep 2020 - Aug 2021</p>
-          </div>
-          <div class="experience-description">
-            <span class="experience-title">Full-time &mdash; Front End Developer</span>
-            <p class="experience-text">Working as Angular Developer in Santander, a bank company. I'm responsible for
-              application development, test, and production deployment using Angular 2+.</p>
-            <div class="experience-address">
-              <div class="address">
-                <ion-icon class="experience-icon" name="location-outline"></ion-icon>
-                <p>São Paulo, Brazil</p>
-              </div>
-              <div class="address">
-                <ion-icon class="experience-icon" name="link-outline"></ion-icon>
-                <a class="experience-address-link" href="https://www.santander.com.br/"
-                  target="_blank">santander.com.br</a>
-              </div>
-            </div>
+          <div class="profile-img-box">
+            <img
+              src="img/profile-min.jpg"
+              class="profile-img"
+              alt="Leonardo profile picture"
+            />
           </div>
 
-          <div class="experience-company">
-            <span class="experience-title">GFT Group</span>
-            <p class="experience-text">Aug 2019 - Sep 2020</p>
+          <div class="profile-description-box">
+            <h3 class="heading-profile txt-ct">Details</h3>
+            <ul class="profile-list">
+              <li class="profile-list-item">
+                <span class="item-title">Name:</span>
+                <span class="item-description">Leonardo A. Pinheiro</span>
+              </li>
+              <li class="profile-list-item">
+                <span class="item-title">Age:</span>
+                <span class="item-description"
+                  ><span class="age"></span> years</span
+                >
+              </li>
+              <li class="profile-list-item">
+                <span class="item-title">Location:</span>
+                <span class="item-description">São Paulo, Brazil</span>
+              </li>
+            </ul>
           </div>
-          <div class="experience-description">
-            <span class="experience-title">Full-time &mdash; Front End Developer</span>
-            <p class="experience-text">Working as Angular Developer in Santander, a bank company. I'm responsible for
-              application development, test, and production deployment using Angular 2+.</p>
-            <div class="experience-address">
-              <div class="address">
-                <ion-icon class="experience-icon" name="location-outline"></ion-icon>
-                <p>São Paulo, Brazil</p>
-              </div>
-              <div class="address">
-                <ion-icon class="experience-icon" name="link-outline"></ion-icon>
-                <a class="experience-address-link" href="https://www.gft.com/" target="_blank">gft.com</a>
+        </div>
+      </section>
+
+      <section class="section-experience" id="experience">
+        <div class="container txt-ct">
+          <h2 class="heading-secondary">Experience</h2>
+        </div>
+
+        <div class="container">
+          <!-- ----------- EDUCATION ----------- -->
+          <div class="experience">
+            <h3 class="heading-experience">Education</h3>
+            <div class="experience-company">
+              <span class="experience-title">Unibta</span>
+              <p class="experience-text">Jan 2014 - Dez 2018</p>
+            </div>
+            <div class="experience-description">
+              <span class="experience-title"
+                >Bachelor - Computer Engineering</span
+              >
+              <p class="experience-text">
+                This degree showed me principles from Computer Science and
+                Electrical Engineering to create hardware (physical components)
+                and firmware which are used in a wide range of areas.
+              </p>
+              <div class="experience-address">
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <p>São Paulo, Brazil</p>
+                </div>
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="link-outline"
+                  ></ion-icon>
+                  <a
+                    class="experience-address-link"
+                    href="https://unibta.edu.br/"
+                    target="_blank"
+                    >unibta.edu.br</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="experience-company">
-            <span class="experience-title">Wipro Limited</span>
-            <p class="experience-text">Sep 2018 - Aug 2019</p>
-          </div>
-          <div class="experience-description">
-            <span class="experience-title">Full-time &mdash; Full Stack Developer</span>
-            <p class="experience-text">Working as Full Stack Developer in Bradesco, a bank company. I'm responsible for
-              application development, test, and production deployment using Cobol and Java.</p>
-            <div class="experience-address">
-              <div class="address">
-                <ion-icon class="experience-icon" name="location-outline"></ion-icon>
-                <p>São Paulo, Brazil</p>
-              </div>
-              <div class="address">
-                <ion-icon class="experience-icon" name="link-outline"></ion-icon>
-                <a class="experience-address-link" href="https://www.wipro.com/" target="_blank">wipro.com</a>
+            <div class="experience-company">
+              <span class="experience-title">Senai</span>
+              <p class="experience-text">Jan 2011 - Dez 2012</p>
+            </div>
+            <div class="experience-description">
+              <span class="experience-title">Course - Eletronics</span>
+              <p class="experience-text">
+                This course professionally qualified myself in the development,
+                installation and maintenance of electronic systems, according to
+                technical, environmental, quality, health and safety procedures
+                and standards at work.
+              </p>
+              <div class="experience-address">
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <p>São Paulo, Brazil</p>
+                </div>
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="link-outline"
+                  ></ion-icon>
+                  <a
+                    class="experience-address-link"
+                    href="https://www.sp.senai.br/"
+                    target="_blank"
+                    >sp.senai.br</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="experience-company">
-            <span class="experience-title">Foursys</span>
-            <p class="experience-text">Aug 2017 - Aug 2018</p>
-          </div>
-          <div class="experience-description">
-            <span class="experience-title">Full-time &mdash; Back End Developer</span>
-            <p class="experience-text">Working as Back End Developer in Bradesco, a bank company. I'm responsible for
-              application development, test, and production deployment using Cobol and DB2.</p>
-            <div class="experience-address">
-              <div class="address">
-                <ion-icon class="experience-icon" name="location-outline"></ion-icon>
-                <p>São Paulo, Brazil</p>
+            <!-- ----------- CAREER ----------- -->
+            <h3 class="heading-experience">Career</h3>
+            <div class="experience-company">
+              <span class="experience-title">Beyond Soluções</span>
+              <p class="experience-text">Sep 2021 - current</p>
+            </div>
+            <div class="experience-description">
+              <span class="experience-title"
+                >Full-time &mdash; Front End Developer</span
+              >
+              <p class="experience-text">
+                Working as Angular Developer in BTG Pactual, a stockbroker
+                company. I'm responsible for application development, test, and
+                production deployment using Angular 2+ and AngularJS.
+              </p>
+              <div class="experience-address">
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <p>São Paulo, Brazil</p>
+                </div>
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="link-outline"
+                  ></ion-icon>
+                  <a
+                    class="experience-address-link"
+                    href="https://www.imaginebeyond.com.br/"
+                    target="_blank"
+                    >imaginebeyond.com.br</a
+                  >
+                </div>
               </div>
-              <div class="address">
-                <ion-icon class="experience-icon" name="link-outline"></ion-icon>
-                <a class="experience-address-link" href="https://www.foursys.com.br/" target="_blank">foursys.com.br</a>
+            </div>
+
+            <div class="experience-company">
+              <span class="experience-title">Santander</span>
+              <p class="experience-text">Sep 2020 - Aug 2021</p>
+            </div>
+            <div class="experience-description">
+              <span class="experience-title"
+                >Full-time &mdash; Front End Developer</span
+              >
+              <p class="experience-text">
+                Working as Angular Developer in Santander, a bank company. I'm
+                responsible for application development, test, and production
+                deployment using Angular 2+.
+              </p>
+              <div class="experience-address">
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <p>São Paulo, Brazil</p>
+                </div>
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="link-outline"
+                  ></ion-icon>
+                  <a
+                    class="experience-address-link"
+                    href="https://www.santander.com.br/"
+                    target="_blank"
+                    >santander.com.br</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="experience-company">
+              <span class="experience-title">GFT Group</span>
+              <p class="experience-text">Aug 2019 - Sep 2020</p>
+            </div>
+            <div class="experience-description">
+              <span class="experience-title"
+                >Full-time &mdash; Front End Developer</span
+              >
+              <p class="experience-text">
+                Working as Angular Developer in Santander, a bank company. I'm
+                responsible for application development, test, and production
+                deployment using Angular 2+.
+              </p>
+              <div class="experience-address">
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <p>São Paulo, Brazil</p>
+                </div>
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="link-outline"
+                  ></ion-icon>
+                  <a
+                    class="experience-address-link"
+                    href="https://www.gft.com/"
+                    target="_blank"
+                    >gft.com</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="experience-company">
+              <span class="experience-title">Wipro Limited</span>
+              <p class="experience-text">Sep 2018 - Aug 2019</p>
+            </div>
+            <div class="experience-description">
+              <span class="experience-title"
+                >Full-time &mdash; Full Stack Developer</span
+              >
+              <p class="experience-text">
+                Working as Full Stack Developer in Bradesco, a bank company. I'm
+                responsible for application development, test, and production
+                deployment using Cobol and Java.
+              </p>
+              <div class="experience-address">
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <p>São Paulo, Brazil</p>
+                </div>
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="link-outline"
+                  ></ion-icon>
+                  <a
+                    class="experience-address-link"
+                    href="https://www.wipro.com/"
+                    target="_blank"
+                    >wipro.com</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="experience-company">
+              <span class="experience-title">Foursys</span>
+              <p class="experience-text">Aug 2017 - Aug 2018</p>
+            </div>
+            <div class="experience-description">
+              <span class="experience-title"
+                >Full-time &mdash; Back End Developer</span
+              >
+              <p class="experience-text">
+                Working as Back End Developer in Bradesco, a bank company. I'm
+                responsible for application development, test, and production
+                deployment using Cobol and DB2.
+              </p>
+              <div class="experience-address">
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <p>São Paulo, Brazil</p>
+                </div>
+                <div class="address">
+                  <ion-icon
+                    class="experience-icon"
+                    name="link-outline"
+                  ></ion-icon>
+                  <a
+                    class="experience-address-link"
+                    href="https://www.foursys.com.br/"
+                    target="_blank"
+                    >foursys.com.br</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-abilitie" id="abilitie">
+      <section class="section-abilitie" id="abilitie">
+        <div class="container">
+          <div class="abilitie">
+            <h2 class="heading-abilitie">Abilities</h2>
+            <div class="abilitie-box">
+              <h3 class="heading-abilitie--box">Skills</h3>
+              <ul class="abilitie-list">
+                <li>
+                  <span>HTML5</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>CSS3</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>Javascript</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>Typescript</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>SASS / SCSS</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="abilitie-list">
+                <li>
+                  <span>BEM</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>Angular 2+</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>AngularJS</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>Java</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>Cobol</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="abilitie-box">
+              <h3 class="heading-abilitie--box">Languages</h3>
+              <ul class="abilitie-list">
+                <li>
+                  <span>Portuguese (Mother tungue)</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="abilitie-list">
+                <li>
+                  <span>English (Daily use)</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="abilitie-box">
+              <h3 class="heading-abilitie--box">Tools</h3>
+              <ul class="abilitie-list">
+                <li>
+                  <span>Git / Git Flow</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>Figma</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="abilitie-list">
+                <li>
+                  <span>MS Office</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </li>
+                <li>
+                  <span>Windows</span>
+                  <div class="abilitie-level">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container txt-ct">
+        <h2 class="heading-secondary">Contact</h2>
+      </div>
+
       <div class="container">
-        <div class="abilitie">
-          <h2 class="heading-abilitie">Abilities</h2>
-          <div class="abilitie-box">
-            <h3 class="heading-abilitie--box">Skills</h3>
-            <ul class="abilitie-list">
-              <li>
-                <span>HTML5</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>CSS3</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>Javascript</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>Typescript</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>SASS / SCSS</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-            </ul>
-
-            <ul class="abilitie-list">
-              <li>
-                <span>BEM</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>Angular 2+</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>AngularJS</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>Java</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>Cobol</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="abilitie-box">
-            <h3 class="heading-abilitie--box">Languages</h3>
-            <ul class="abilitie-list">
-              <li>
-                <span>Portuguese (Mother tungue)</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-              </li>
-            </ul>
-
-            <ul class="abilitie-list">
-              <li>
-                <span>English (Daily use)</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="abilitie-box">
-            <h3 class="heading-abilitie--box">Tools</h3>
-            <ul class="abilitie-list">
-              <li>
-                <span>Git / Git Flow</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>Figma</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-              </li>
-            </ul>
-
-            <ul class="abilitie-list">
-              <li>
-                <span>MS Office</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-              </li>
-              <li>
-                <span>Windows</span>
-                <div class="abilitie-level">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div class="contact">
+          <a
+            href="https://www.linkedin.com/in/leonardo-anderson-pinheiro/"
+            target="_blank"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://github.com/LeoPinheiro704/" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="mailto:lasantos704@gmail.com">
+            <ion-icon name="mail"></ion-icon>
+          </a>
         </div>
+        <span class="copyright"
+          >&copy; Leonardo A. Pinheiro - Front End Developer</span
+        >
       </div>
-    </section>
-  </main>
-
-  <footer class="footer" id="contact">
-    <div class="container txt-ct">
-      <h2 class="heading-secondary">Contact</h2>
-    </div>
-
-    <div class="container">
-      <div class="contact">
-        <a href="https://www.linkedin.com/in/leonardo-anderson-pinheiro/" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-        <a href="https://github.com/LeoPinheiro704/" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="mailto:lasantos704@gmail.com">
-          <ion-icon name="mail"></ion-icon>
-        </a>
-      </div>
-      <span class="copyright">&copy; Leonardo A. Pinheiro - Front End Developer</span>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
