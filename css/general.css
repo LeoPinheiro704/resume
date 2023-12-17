@@ -130,6 +130,14 @@ body::-webkit-scrollbar-button {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.expand-2-col {
+  grid-column: 1 / 3;
+}
+
+.expand-col {
+  grid-column: 1 / -1;
+}
+
 /* ************* */
 /* HELPERS */
 /* ************* */

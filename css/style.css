@@ -95,6 +95,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 4.8rem;
   align-items: center;
+  justify-items: center;
 }
 
 .hero-name {
@@ -130,6 +131,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  max-width: 40rem;
 }
 
 .profile-img-box::before,
